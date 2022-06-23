@@ -25,7 +25,9 @@ public enum Status {
     Status status[] = Status.values();
  
         for (Status e : status) {
-            System.out.println(e + " at code number : ");
+            int num = e.ordinal();
+            StausUser t = new StausUser(num);
+            System.out.println(e + " at code number : " + t);
         }
 }    
 }

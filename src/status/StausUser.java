@@ -11,24 +11,33 @@ package status;
  */
 public class StausUser 
 {
-   public void statusDetail(int code)
-{
-switch(code)
-        {
-        case 0: System.out.println("REJECTED");
-        break;
-        case 1: System.out.println("PENDING");
-        break;
-        case 2:
-        System.out.println("PROCESSING");
-        break;
-        case 3: 
-            System.out.println("APPROVED");
-        break;
-        default:
-         System.out.println("NOT VALID CODE");
-        break;
-        }
-}
- 
+    private String value;
+    
+    public StausUser(int code)
+    {
+        this.value = value;
+
+        switch(code)
+            {
+            case 0: 
+                value = "ZERO";
+            break;
+            case 1: 
+                value = "ONE";
+            break;
+            case 2:
+                value = "TWO";
+            break;
+            case 3: 
+                value = "THREE";
+            break;
+            default:
+                value = "FOUR";
+            break;
+            }
+    } 
+   
+    public String toString(){
+        return value;
+    }
 }
